@@ -5,14 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by Administrator on 2016/4/11.
+ * Created by Administrator on 2016/4/12.
  */
 @Controller
 @EnableAutoConfiguration
-public class IndexController {
+public class ProductController {
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     String index() {
-        return "index";
+        return  "hello";
     }
 }
