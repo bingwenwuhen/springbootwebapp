@@ -1,6 +1,7 @@
 package cn.com.mapper;
 
 import cn.com.domain.Product;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -9,5 +10,6 @@ import java.util.List;
  */
 public interface ProductMapper {
 
+    @Select("select * from product")
     List<Product> listAll();
 }
