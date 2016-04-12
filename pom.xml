@@ -13,7 +13,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.2.4.RELEASE</version>
+    <version>1.2.5.RELEASE</version>
     <relativePath/>
   </parent>
 
@@ -68,15 +68,29 @@
 
   </dependencies>
 
-  <!--<build>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <!--<version>${spring.boot.version}</version>-->
+        <configuration>
+          <mainClass>cn.com.SpringBootWebApplication</mainClass>
+          <layout>ZIP</layout>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>
+                repackage
+              </goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
--->
+
   <repositories>
     <repository>
       <id>spring-snapshots</id>
