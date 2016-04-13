@@ -25,22 +25,22 @@ public class SwaggerConfig {
 //                .genericModelSubstitutes(ResponseEntity.class)
                 .useDefaultResponseMessages(false)
                 .forCodeGeneration(true)
-                .pathMapping("/")// base£¬×îÖÕµ÷ÓÃ½Ó¿Úºó»áºÍpathsÆ´½ÓÔÚÒ»Æğ
+                .pathMapping("/")// baseï¼Œæœ€ç»ˆè°ƒç”¨æ¥å£åä¼šå’Œpathsæ‹¼æ¥åœ¨ä¸€èµ·
                 .select()
-                .paths(or(regex("/api/.*")))//¹ıÂËµÄ½Ó¿Ú
+                .paths(or(regex("/api/.*")))//è¿‡æ»¤çš„æ¥å£
                 .build()
                 .apiInfo(testApiInfo());
     }
 
 
     public ApiInfo testApiInfo() {
-        ApiInfo apiInfo = new ApiInfo("Electronic Health Record(EHR) Platform API",//´ó±êÌâ
-                "EHR Platform's REST API, for system administrator",//Ğ¡±êÌâ
-                "1.0",//°æ±¾
+        ApiInfo apiInfo = new ApiInfo("Electronic Health Record(EHR) Platform API",//å¤§æ ‡é¢˜
+                "EHR Platform's REST API, for system administrator",//å°æ ‡é¢˜
+                "1.0",//ç‰ˆæœ¬
                 "NO terms of service",
-                "bingwenwuhen@163.com",//×÷Õß
-                "The Apache License, Version 2.0",//Á´½ÓÏÔÊ¾ÎÄ×Ö
-                "http://www.apache.org/licenses/LICENSE-2.0.html"//ÍøÕ¾Á´½Ó
+                "bingwenwuhen@163.com",//ä½œè€…
+                "The Apache License, Version 2.0",//é“¾æ¥æ˜¾ç¤ºæ–‡å­—
+                "http://www.apache.org/licenses/LICENSE-2.0.html"//ç½‘ç«™é“¾æ¥
         );
         return apiInfo;
     }
