@@ -4,6 +4,7 @@ import cn.com.domain.User;
 import cn.com.mapper.UserMapper;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,9 @@ public class UserController {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
     @RequestMapping(value = "/getUserInfo",
             method = RequestMethod.GET,
             produces = "application/json;charset=utf-8")
@@ -28,5 +32,11 @@ public class UserController {
             System.out.println("user.getName():" + user.getName());
         }
         return user;
+    }
+
+    @RequestMapping(value = "/get/mongo", method = RequestMethod.GET)
+    @ApiOperation("测试mongo是否整合成功")
+    public void testMongo() {
+        System.out.println(mongoTemplate);
     }
 }
