@@ -3,7 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/cn/com/config/SwaggerConfig.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/cn/com/controllers/SwaggerController.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/cn/com/domain/User.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/application.properties" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/css" charset="GBK" />
