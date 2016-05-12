@@ -21,6 +21,7 @@ public class MorphiaFactory {
     @Inject
     private Mongo mongo;
 
+
     @Inject
     MongoProperties mongoProperties;
 
