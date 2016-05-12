@@ -126,6 +126,9 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.0.23" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.35" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.4" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb.morphia:morphia:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.proxytoys:proxytoys:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.4" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.8" level="project" />
